@@ -205,7 +205,7 @@
       scaffolding.height = 360;
       scaffolding.resizeMode = "preserve-ratio";
       scaffolding.editableLists = false;
-      scaffolding.usePackagedRuntime = true;
+      scaffolding.usePackagedRuntime = false;
       scaffolding.setup();
       scaffolding.appendTo(appElement);
 
@@ -310,7 +310,7 @@
       await scaffolding.loadProject(projectData);
       setProgress(1);
       loadingScreen.hidden = true;
-      if (false) {
+      if (true) {
         scaffolding.start();
       } else {
         launchScreen.hidden = false;
